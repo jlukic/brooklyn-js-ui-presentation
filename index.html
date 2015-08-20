@@ -157,20 +157,20 @@
     </blockquote>
   </div>
   <div class="slide">
-    <h3>&mdash; Conceptual Integrity &mdash;</h3>
-    <h2>Starting from Scratch</h2>
-    <p>Lets make a selection dropdown from scratch!</p>
+    <h3>&mdash; From Scratch &mdash;</h3>
+    <h2>The Myth of the Blank Canvas</h2>
+    <p class="bullet">Lets make a selection dropdown from scratch!</p>
     <ul>
       <li>What if user is at bottom of screen?</li>
       <li>How many elements before a scrollbar appears?</li>
       <li>What about animation?</li>
       <li>How do you handle touch?</li>
       <li>How do you handle sub-categories?</li>
-      <li>...now let's do all that for multiple selections!</li>
-      <li>...and support user tagging</li>
-      <li>...and population from remote data sources!</li>
+      <li>...now let's do all that while supporting multiple selections!</li>
+      <li>...and add user tagging</li>
+      <li>...and remote data sources!</li>
     </ul>
-    <p class="bullet" style="margin-top:1em;"><b>Don't do it!</b></p>
+    <h3 class="bullet" style="margin-top:1em;"><b>Don't do it!</b></h3>
   </div>
   <div class="slide">
     <h3>&mdash; Conceptual Integrity &mdash;</h3>
@@ -181,14 +181,15 @@
         <pre><code data-language="javascript">
         $('.ui.popup')
           .popup({
-            duration: 500,
-            position: 'top left'
+            position   : 'top left',
+            transition : 'scale',
+            duration   : 500
           })
         ;
         </code></pre>
       <li>Start from useful netural prototypes</li>
       <li>Refine by adjusting variables to bring your prototype closer to your brand</li>
-      <li>Descend from sitewide defaults which let you edit all your components in one place</li>
+      <li>All components inherit from site-wide default "baseline" variables</li>
     </ul>
   </div>
 <!--   <div class="slide">
