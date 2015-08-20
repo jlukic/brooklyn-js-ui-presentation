@@ -1,0 +1,42 @@
+
+body,
+.bespoke-parent {
+  font-family: 'Roboto', Arial, sans-serif !important;
+  font-size: 14px;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  margin: 0em;
+  font-size: 1em;
+  color: #AAA !important;
+}
+h2 {
+  margin: -0.05em 0em 0.5em;
+}
+
+b {
+  color: #54C8FF;
+}
+
+li:before {
+  opacity: 0.5;
+  font-size: 9px;
+  content: 'ಠ';
+  position: relative;
+  top: -1px;
+  margin-right: 3px;
+}
+
+.across {
+  width: 100%;
+}
+.across li {
+  float: left;
+  width: 25%;
+  margin: 0.2em 0em;
+  padding: 0em;
+}
+.across li:nth-child(4n+1) {
+  clear: left;
+}
